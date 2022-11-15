@@ -6,7 +6,7 @@ language: node_js
     - node_modules
   script:
   - npm test
-  - npm run build
+  - npm run deploy
   deploy:
     #dice que estamos trabajando con GitHub pager
     provider: pages
@@ -14,6 +14,6 @@ language: node_js
     github-token: $GITHUB_TOKEN
     local_dir: build
     on:
-      branch: master
+      branch: gh-pages
 
 
